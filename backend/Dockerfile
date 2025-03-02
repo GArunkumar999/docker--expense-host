@@ -3,7 +3,8 @@ WORKDIR /opt/backend
 COPY package.json .
 COPY *.js . 
 RUN npm install 
-ENV DB_HOST="127.0.0.1"
+#you can use 127.0.0.1 in place of localhost
+ENV DB_HOST="localhost"
 CMD ["node", "index.js"]
 
 
